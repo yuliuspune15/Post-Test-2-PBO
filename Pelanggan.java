@@ -1,27 +1,44 @@
 package model;
 
-public class Lapangan {
-    private String idLapangan;
-    private String namaLapangan;
-    private double hargaPerJam;
+public class Pelanggan {
+    private String idPelanggan;
+    private String nama;
+    private String noHP;
 
-    public Lapangan(String idLapangan, String namaLapangan, double hargaPerJam) {
-        this.idLapangan = idLapangan;
-        this.namaLapangan = namaLapangan;
-        this.hargaPerJam = hargaPerJam;
+    // Constructor
+    public Pelanggan(String idPelanggan, String nama, String noHP) {
+        this.idPelanggan = idPelanggan;
+        this.nama = nama;
+        this.noHP = noHP;
     }
 
-    public String getIdLapangan() { return idLapangan; }
-    public void setIdLapangan(String idLapangan) { this.idLapangan = idLapangan; }
+    // Getter dan Setter
+    public String getIdPelanggan() {
+        return idPelanggan;
+    }
 
-    public String getNamaLapangan() { return namaLapangan; }
-    public void setNamaLapangan(String namaLapangan) { this.namaLapangan = namaLapangan; }
+    public void setIdPelanggan(String idPelanggan) {
+        this.idPelanggan = idPelanggan;
+    }
 
-    public double getHargaPerJam() { return hargaPerJam; }
-    public void setHargaPerJam(double hargaPerJam) { this.hargaPerJam = hargaPerJam; }
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNoHP() {
+        return noHP;
+    }
+
+    public void setNoHP(String noHP) {
+        this.noHP = noHP;
+    }
 
     @Override
     public String toString() {
-        return idLapangan + " - " + namaLapangan + " (Rp" + hargaPerJam + "/jam)";
+        return idPelanggan + " - " + nama + " (HP: " + noHP + ")";
     }
 }
