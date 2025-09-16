@@ -28,6 +28,7 @@ Fitur yang tersedia di menu utama:
 Jika user memilih menu 1. Tambah Pelanggan, program akan meminta beberapa data pelanggan, yaitu ID Pelanggan, Nama, dan Nomor HP. Data yang dimasukkan user kemudian digunakan untuk membuat objek baru dari class Pelanggan (yang ada di package model). Objek ini lalu disimpan ke dalam ArrayList melalui method di PelangganService. Setelah proses penambahan berhasil, program menampilkan pesan konfirmasi.
 <img width="348" height="217" alt="image" src="https://github.com/user-attachments/assets/0c158a19-f27b-4fbe-8bcc-2cf8bd0086a3" />
 
+
 <img width="479" height="330" alt="image" src="https://github.com/user-attachments/assets/7f2c606a-ca12-4ffd-bb25-a58b13155fbe" />
 
 Jika user memilih menu 2. Buat Reservasi, program akan meminta input data untuk membuat reservasi baru. Data yang diminta antara lain: ID Reservasi, ID Pelanggan (yang sudah ditambahkan sebelumnya), Nama Lapangan, Tanggal, dan Jam Reservasi. Data ini digunakan untuk membuat objek baru dari class Reservasi (package model), kemudian disimpan ke dalam ArrayList melalui method di ReservasiService. Setelah berhasil ditambahkan, program menampilkan pesan konfirmasi.
